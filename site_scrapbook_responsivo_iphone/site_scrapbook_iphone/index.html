@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f2e7dd">
+  <title>Nosso cantinho ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="paper-grain" aria-hidden="true"></div>
+  <header class="top">
+    <a class="brand" href="#topo">♡ nosso cantinho</a>
+    <span class="top-note">feito com carinho, só para você</span>
+    <button class="music-mini" id="musicToggle" type="button" aria-label="Tocar ou pausar música">♫ <span id="musicStatus">tocar música</span></button>
+  </header>
+
+  <main id="topo">
+    <section class="cover">
+      <span class="cover-sticker sticker-one">for you ♡</span>
+      <span class="cover-sticker sticker-two">feito à mão</span>
+      <p class="kicker">UM ÁLBUM DE PEQUENAS GRANDES COISAS</p>
+      <h1>Um pouquinho<br>do <em>nosso mundo.</em></h1>
+      <p class="cover-copy">Algumas lembranças, motivos, bilhetinhos e um tanto de amor, tudo juntinho aqui.</p>
+      <a class="discover" href="#album">explore à vontade <span>↓</span></a>
+      <div class="cover-doodle" aria-hidden="true">✿　♡　✧</div>
+    </section>
+
+    <section class="intro-note">
+      <div class="tape"></div>
+      <p class="hand">Oi, meu amor!</p>
+      <p>Preparei esse cantinho para você passear sem pressa. Pode clicar nas fotos, abrir os bilhetes e descobrir cada pedacinho. Não tem ordem certa e é só nosso.</p>
+      <span class="note-sign">com amor, sua Nick ♡</span>
+    </section>
+
+    <section class="album section" id="album">
+      <div class="section-head">
+        <div><span class="eyebrow">01 / NOSSAS MEMÓRIAS</span><h2>Pedacinhos <em>de nós</em></h2></div>
+        <span class="scribble">toque para ampliar ↗</span>
+      </div>
+      <div class="photo-grid">
+        <button class="polaroid tilt-left" type="button" data-title="Um dia especial" data-text="Tem dias que ficam guardados na memória sem a gente nem perceber. Esse é um deles. ♡">
+          <span class="photo-frame"><img src="fotos/foto1.jpg" alt="Foto de vocês duas" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span class="photo-placeholder">coloque<br>uma foto aqui ♡</span></span>
+          <span class="photo-caption">um dia especial</span><span class="pin">✦</span>
+        </button>
+        <button class="polaroid tilt-right" type="button" data-title="Meu lugar favorito" data-text="Meu lugar favorito não é exatamente um lugar. É onde você está. 💗">
+          <span class="photo-frame"><img src="fotos/foto2.jpg" alt="Outra foto de vocês duas" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span class="photo-placeholder">mais uma<br>lembrança nossa</span></span>
+          <span class="photo-caption">meu lugar favorito</span><span class="pin">♡</span>
+        </button>
+        <button class="polaroid tilt-right-low" type="button" data-title="Nós duas" data-text="Gosto da nossa história, das nossas conversas e de tudo que ainda vamos viver.">
+          <span class="photo-frame"><img src="fotos/foto3.jpg" alt="Mais uma foto de vocês duas" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><span class="photo-placeholder">essa também<br>merece um lugar</span></span>
+          <span class="photo-caption">nós duas</span><span class="pin">✿</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="reasons section">
+      <div class="section-head">
+        <div><span class="eyebrow">02 / COISAS QUE EU AMO</span><h2>Abre um <em>bilhetinho</em></h2></div>
+        <span class="scribble">um de cada vez ♡</span>
+      </div>
+      <div class="note-grid">
+        <button class="little-note note-pink" type="button" data-title="Seu sorriso" data-text="Porque ele muda o meu dia. E eu sempre quero ser um dos motivos dele aparecer.">Seu sorriso <span>♡</span></button>
+        <button class="little-note note-yellow" type="button" data-title="Seu jeitinho" data-text="Até as pequenas manias que são tão suas fazem parte do que eu amo em você.">Seu jeitinho <span>✿</span></button>
+        <button class="little-note note-blue" type="button" data-title="Seu abraço" data-text="Teu abraço porque é nele que eu quero fazer morada e é onde eu me sinto segura sempre.">Seu abraço <span>☁</span></button>
+        <button class="little-note note-lilac" type="button" data-title="A gente" data-text="Eu amo poder dividir a vida com você e descobrir, aos poucos, tudo o que ainda podemos ser.">A gente <span>✧</span></button>
+      </div>
+      <div class="reveal-note" id="noteReveal" aria-live="polite">Escolha um bilhetinho para abrir. ♡</div>
+    </section>
+
+    <section class="playlist section">
+      <div class="playlist-card">
+        <div class="record" aria-hidden="true"><div class="record-center">♫</div></div>
+        <div class="playlist-copy">
+          <span class="eyebrow">03 / NOSSA TRILHA SONORA</span>
+          <h2>Uma música<br><em>para acompanhar.</em></h2>
+          <p>Deixei nossa música aqui para acompanhar seu passeio. Toque no botão para ouvir.</p>
+          <div class="audio-controls">
+            <button class="play-button" id="playButton" type="button" aria-label="Tocar música">▶</button>
+            <div class="track"><strong>Te Devoro</strong><span>Djavan · nossa música ♡</span></div>
+            <span class="sound-wave" id="soundWave">♫</span>
+          </div>
+          <audio id="musica" preload="metadata" loop>
+            <source src="musicas/te-devoro.mp3" type="audio/mpeg">
+          </audio>
+          <p class="audio-hint" id="audioHint">Se não começar, toque no botão de play. ♡</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="envelopes section">
+      <div class="section-head">
+        <div><span class="eyebrow">04 / CORREIO DO CORAÇÃO</span><h2>Cartinhas <em>para você</em></h2></div>
+        <span class="scribble">tem segredinhos aqui</span>
+      </div>
+      <div class="envelope-grid">
+        <button class="envelope" type="button" data-title="Para um dia difícil" data-text="Se hoje não estiver sendo fácil, lembra que você não precisa dar conta de tudo sozinha. Estou aqui para te acolher, te ouvir e ficar pertinho. Você é motivo de orgulho e merece todo o carinho do mundo. Se eu não estiver com você agora, espero que essa cartinha te abrace um pouquinho.">
+          <span class="env-icon">✉</span><span>abra quando precisar de carinho</span><small>abrir cartinha ↗</small>
+        </button>
+        <button class="envelope" type="button" data-title="Para quando sentir saudade" data-text="Dizem que a saudade é o azar de quem tem muita sorte, espero que possamos nos ver logo, mas enquanto isso, ouve Djavan e lembra que eu te amo. E que mesmo longe, você está sempre comigo.">
+          <span class="env-icon">♡</span><span>abra quando sentir saudade</span><small>abrir cartinha ↗</small>
+        </button>
+        <button class="envelope" type="button" data-title="Só porque sim" data-text="Não precisa de data especial para eu te lembrar que te amo. Hoje é um ótimo dia para dizer isso mais uma vez.">
+          <span class="env-icon">✧</span><span>abra sem motivo nenhum</span><small>abrir cartinha ↗</small>
+        </button>
+      </div>
+    </section>
+
+    <section class="last-page section">
+      <div class="last-paper">
+        <span class="eyebrow">05 / AINDA TEM MUITA HISTÓRIA</span>
+        <div class="big-heart">♡</div>
+        <h2>Que bom que<br><em>é com você.</em></h2>
+        <p>Obrigada por fazer parte dos meus dias. Quero continuar enchendo nosso álbum de momentos, viagens, risadas, abraços e histórias que ainda nem imaginamos.</p>
+        <button class="final-button" id="surpriseButton" type="button">um último carinho? ♡</button>
+        <p class="final-message" id="finalMessage" aria-live="polite"></p>
+        <span class="last-sign">te amo, hoje e em todos os capítulos.</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>feito com amor, para guardar um pouquinho de nós ♡</footer>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="true"></div>
+    <article class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" type="button" aria-label="Fechar">×</button>
+      <div class="modal-flower">✿</div>
+      <h2 id="modalTitle">Uma lembrança</h2>
+      <p id="modalText"></p>
+      <button class="modal-ok" id="modalOk" type="button">guardar no coração ♡</button>
+    </article>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
